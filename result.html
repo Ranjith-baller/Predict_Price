@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block head %} <title class="justify-content-center" style="text-align:center;">Car Price Pred : Result</title> {% endblock %}
+
+
+{% block body %}
+<h2 style="text-align:center;">{{ prediction_text }}</h2>
+<form action="{{ url_for('Home')}}" class="form-group card-body" method="get" style="text-align:center;">
+    <button type="submit" class="btn btn-primary">Home</button>
+</form>
+{% endblock %}
